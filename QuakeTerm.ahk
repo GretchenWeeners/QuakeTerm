@@ -51,8 +51,9 @@ Menu, tray, add, Exit, MenuHandler                             ; Add an exit but
 Return	
 
 MenuHandler:				
-If A_ThisMenuItem = Exit                                        ; If exit is clicked from tray menu						
-	goto, CLEANEXIT                                         ; Run CLEANEXIT
+	If A_ThisMenuItem = Exit                                ; If exit is clicked from tray menu						
+		goto, CLEANEXIT                                 ; Run CLEANEXIT
+Return
 
 CLEANEXIT:                                                      ; Clean exit routine
 	process, Close, %cmdPID%                                ; Kill our hidden command prompt window
