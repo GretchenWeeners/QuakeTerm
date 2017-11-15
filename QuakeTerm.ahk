@@ -11,6 +11,7 @@
 ;  `---'                                                         `---'
 ;Description: Opens CMD.exe, stretches is out, hides it, and makes it appear from the top of the screen.
 ;Instructions: Compile this script to an exe, or just run it. CNTRL+` to show command prompt.
+;Notes: Only tested on Windows 10
 
 #SingleInstance force                                          ; Force only one instance to run at a time
 DetectHiddenWindows, On	                                       ; Look for windows that are set to hidden
